@@ -23,15 +23,15 @@ module.exports = {
         words: [
             [/(italia|italienske?|roma|romenske?)/, "Utlandia"],
             [/(roma|romenske?)/, "(hovedstad)"]
-    ],
-    answer: "italia"
+        ],
+        answer: "italia"
     },
     burkina_faso: {
         url: 'https://www.regjeringen.no/no/tema/utenrikssaker/reiseinformasjon/velg-land/reiseinfo_burkinafaso/id2414675/',
         words: [[/(burkina( faso)?)|ambaburkina|ouagadougou/, "Utlandia"]],
         answer: "burkina faso"
     },
-    myanmar:{
+    myanmar: {
         url: 'https://www.regjeringen.no/no/tema/utenrikssaker/reiseinformasjon/velg-land/reiseinfo_myanmar/id2417496/',
         words: [
             [/(myanmar|myanmarsk)/, "Utlandia"],
