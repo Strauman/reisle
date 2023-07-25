@@ -1,0 +1,78 @@
+#guess-container {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+}
+#guess-input {
+    width: 40%;
+    height: 50px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+#submit-button {
+    height: 50px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    padding: 5px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#submit-button:hover {
+    background-color: #45a049;
+}
+#result {
+    text-align: center;
+    font-size: 1.2em;
+    position: absolute;
+    width: 100%;
+    top: -30px;
+    left: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 2em;
+    display: none;
+}
+
+.loading:after {
+    content: ' .';
+    animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0,0,0,0);
+        text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);
+    }
+    40% {
+        color: white;
+        text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);
+    }
+    60% {
+        text-shadow:
+            .25em 0 0 white,
+            .5em 0 0 rgba(0,0,0,0);
+    }
+    80%, 100% {
+        text-shadow:
+            .25em 0 0 white,
+            .5em 0 0 white;
+    }
+}
